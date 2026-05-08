@@ -1,0 +1,97 @@
+body {
+    background-image: linear-gradient(to right top, #e0e0e0, #e0e1e1, #e0e1e3, #dfe2e4, #dee3e5, #e0e5e8, #e3e8ea, #e5eaed, #eceff2, #f3f4f6, #f9f9fb, #ffffff);
+    min-height: 100vh;
+}
+
+.shadows-into-light {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+header {
+    background-image: linear-gradient(to right, #363636, #333436, #2e3236, #293035, #222f33, #193133, #13322f, #123327, #1d361a, #2f3607, #463200, #5e2900);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.title {
+    color: #e2e2e2;
+    font-size: 3rem;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 600px;
+
+    background: rgba(255, 255, 255, 0.05);
+    /* Sfondo quasi invisibile */
+    backdrop-filter: blur(10px);
+    /* Sfocatura dello sfondo */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Bordo sottile "luce" */
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    /* Ombra morbida */
+}
+
+.image-wrapper {
+    flex-shrink: 0;
+}
+
+img {
+    width: 140px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.name {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.details {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.dot {
+    margin: 0 0.4rem;
+}
+
+.bio {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.awards {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}
+
+.award-pill {
+  display: inline-block;
+  padding: 4px 8px;
+  border: 0.5px solid lightgrey;
+  border-radius: 6px;
+  margin-right: 6px;
+  font-size: 0.85rem;
+}
