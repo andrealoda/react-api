@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Card from './components/Card'
 import Header from './components/Header'
+import Selector from './components/Selector'
 
 function App() {
 
@@ -9,6 +10,9 @@ function App() {
 
   const api_actresses = 'https://lanciweb.github.io/demo/api/actresses/'
   const [actresses, setActresses] = useState([])
+
+  const all = [...actors, ...actresses]
+  const [selector, setSelector] = useState('all')
 
   useEffect(() => {
     console.log('component mounted');
@@ -34,9 +38,10 @@ function App() {
   return (
     <>
       <Header />
+      <Selector setSelector={setSelector} />
 
       <div className="cards-container">
-        <Card actors={actors} actresses={actresses} />
+        <Card actors={actors} actresses={actresses} all={all} selector={selector} />
       </div>
     </>
   )

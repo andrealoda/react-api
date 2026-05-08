@@ -18,6 +18,8 @@ header {
 .title {
     color: #e2e2e2;
     font-size: 3rem;
+    padding: 0 1rem;
+    text-align: center;
 }
 
 .cards-container {
@@ -88,10 +90,31 @@ img {
 }
 
 .award-pill {
-  display: inline-block;
-  padding: 4px 8px;
-  border: 0.5px solid lightgrey;
-  border-radius: 6px;
-  margin-right: 6px;
-  font-size: 0.85rem;
+    display: inline-block;
+    padding: 4px 8px;
+    border: 0.5px solid lightgrey;
+    border-radius: 6px;
+    margin-right: 6px;
+    font-size: 0.85rem;
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    width: 120px;
+    border: 0.5px solid lightgrey;
+    border-radius: 12px;
+
+    &:hover {
+        background-color: #343436;
+        color: lightgray;
+    }
+
 }
